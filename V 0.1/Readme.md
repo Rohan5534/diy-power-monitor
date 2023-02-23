@@ -13,3 +13,4 @@
 * Make whole thing battery powered (probably single 18650 battery with boost converter).
 * Make everthing on a PCB board instead of breadboard.
 
+ 

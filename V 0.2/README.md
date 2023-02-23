@@ -1,5 +1,4 @@
-### This version measures load current, voltage and power and shows them on 128x64 I2C OLED display. This version also logs values in 
-### Time,Voltage,Current,Power to a SD Card. 
+### This version measures load current, voltage and power and shows them on 128x64 I2C OLED display. This version also logs values in Time,Voltage,Current,Power format to a SD Card. 
 
 ---
 

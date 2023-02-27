@@ -90,14 +90,22 @@ void loop()
     display.print(pbuf);
     display.println(" mW");
 
+    display.setCursor(100, 6.5);
+
     flag = false;
 
-    if (count == 10)
+    if (count > 9)
     {
       sprintf(buf, "%lu,%s,%s,%s\n", millis() / 1000, vbuf, cbuf, pbuf);
-      Serial.println(pbuf);
-      file.write(buf);
-      file.sync();
+      if (!file.write(buf))
+      {
+        file.write(buf);
+      }
+      if (!file.sync())
+      {
+        file.sync();
+      }
+      display.println(millis() / 1000);
       count = 0;
     }
   }
